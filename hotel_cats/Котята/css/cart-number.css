@@ -1,0 +1,88 @@
+.sect-cart{
+	display: flex;
+	height: 396px;
+	width: 1170px;
+	margin-top: 70px;
+}
+.sect-cart>div:first-of-type{
+	display: flex;
+	height: 396px;
+	width: 600px;
+}
+
+.sect-cart>div:first-of-type>div{
+	display: flex;
+	align-items: center;
+	justify-content: center; 	
+	flex-direction: column;
+	width: 70px;
+	height: 396px;
+	margin-right: 30px;
+}
+.small-img{
+	width: 70px;
+	height: 112px;
+	overflow: hidden;
+	border-radius: 10px;
+}
+.small-img2{
+	width: 70px;
+	height: 112px;
+	overflow: hidden;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	border-radius: 10px;
+}
+.small-img2 img{
+	width: 100%;
+	opacity: 50%;
+}
+.small-img img{
+	height: 100%;
+	opacity: 50%;
+}
+.sect-cart>div:last-of-type{
+	margin-left: 70px;
+	height: 396px;
+	width: 500px;
+}
+.sect-cart>div:last-of-type button{
+	margin-top: 30px;
+}
+ul{
+	padding-left: 0;
+}
+li{
+	list-style: none;
+	font-family: 'Lato Regular', sans-serif;
+	margin-top: 8px;
+}
+.sect-div2-span{
+	font-family: 'Lato Medium', sans-serif;
+}
+#main-img{
+	display: block;
+	width: 500px;
+	height: 396px; 
+	background-size: 100% auto;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.super-lucs{
+	background-image: url("../resources/img/Number-cat.png");
+}
+.econom{
+	background-image: url("../resources/img/area-cat-1.png");
+}
+.econom-plus{
+	background-image: url("../resources/img/Cat2.png");
+}
+.comfort{
+	background-image: url("../resources/img/Number-cat2.png");
+}
+.suite{
+	background-image: url("../resources/img/Number-cat3.png");
+}
+.lucs{
+	background-image: url("../resources/img/area-cat-5.png");
+}

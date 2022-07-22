@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Catalog</title>
+	<link rel="stylesheet" type="text/css" href="../css/index.css">
+	<link rel="stylesheet" type="text/css" href="../css/catalog.css">
+	<link rel="stylesheet" type="text/css" href="../resources/fonts/rubik.css">
+	<link rel="stylesheet" type="text/css" href="../resources/fonts/lato.css">
+	<link rel="stylesheet" type="text/css" href="../css/popap.css">
+</head>
+<body>
+	<div class="background"></div>
+	<main>
+		<header>
+			<a href="index.html"><img src="../resources/vector/лого.svg"></a>
+			<div>
+				<a href="./index.html">Почему мы?</a>
+				<a href="./catalog.html">Номера</a>
+				<a href="./index.html">Отзывы</a>
+				<a href="#How_us_seeking">Как нас найти</a>
+			</div>
+		</header>
+		<content>			
+			<div class="cont-div1">
+				<h1>Наши номера</h1>
+				<select id="select" onchange="check()">
+					<option value="moreArea">&#8593;  По площади</option>
+					<option value="lessArea">&#8595;  По площади</option>
+					<option value="morePrice">&#8593;  По цене</option>
+					<option value="lessPrice">&#8595;  По цене</option>
+				</select>
+			</div>
+			<form>
+				<p class="p-margin">Цена за сутки, &#8381;</p>
+				<input class="input-numb" type="number" name="prise-min"size="3" min="100" max="600" placeholder="От 100">
+				<input class="input-numb" type="number" name="prise-max" size="3" min="100" max="600" placeholder="До 600">
+				<p>Плошадь</p>
+				<ul>
+					<li><input type="checkbox" name="area-1" id="area-1"><label for="area-1">0,63 м<sup>2</sup></label></li>
+					<li><input type="checkbox" name="area-1" id="area-2"><label for="area-2">0,90 м<sup>2</sup></label></li>
+					<li><input type="checkbox" name="area-1" id="area-3"><label for="area-3">1,13 м<sup>2</sup></label></li>
+					<li><input type="checkbox" name="area-1" id="area-4"><label for="area-4">1,56 м<sup>2</sup></label></li>
+					<li><input type="checkbox" name="area-1" id="area-5"><label for="area-5">2,56 м<sup>2</sup></label></li>
+					<li><input type="checkbox" name="area-1" id="area-6"><label for="area-6">2,88 м<sup>2</sup></label></li>
+				</ul>
+				<p>Оснащение номера</p>
+				<ul>
+					<li><input type="checkbox" name="area-1" id="area-7"><label for="area-7">Пустой номер</label></li>
+					<li><input type="checkbox" name="area-1" id="area-8"><label for="area-8">Лежак</label></li>
+					<li><input type="checkbox" name="area-1" id="area-9"><label for="area-9">Когтеточка</label></li>
+					<li><input type="checkbox" name="area-1" id="area-10"><label for="area-10">Игровой-комплекс</label></li>
+					<li><input type="checkbox" name="area-1" id="area-11"><label for="area-11">Домик</label></li>
+				</ul>
+				<input type="submit" name="submit" value="Применить">
+				<input type="reset" name="reset" value="Сбросить фильтр">
+			</form>
+			<div class="area-cat">
+				<div class="area-cat-div">
+					<img src="../resources/img/area-cat-1.png">
+					<h2>Эконом</h2>
+					<p>Размеры (ШхГхВ) - 90х70х180 см</p>
+					<p class="Area" value="1">Площадь - 0,63 м<sup>2</sup></p>
+					<p>Оснащение номера <span id="empty_number"><img src="../resources/vector/Vector-1.svg"></span></p>
+					<p>Цена за сутки: <span class="Price" value="100"> 100&#8381;</span></p>
+					<a href="./cart-number-econom.html"><button class="black-button">Забронировать</button></a>
+				</div>
+				<div class="area-cat-div">
+					<img src="../resources/img/area-cat-2.png">
+					<h2>Эконом плюс</h2>
+					<p>Размеры (ШхГхВ) - 90х100х180 см</p>
+					<p class="Area" value="2">Площадь - 0,90 м<sup>2</sup></p>
+					<p>Оснащение номера <span id="sofa"> <img src="../resources/vector/Vector-2.svg"></span> <span id="cat_thing"> <img src="../resources/vector/Vector-3.svg"></span></p>
+					<p>Цена за сутки: <span class="Price" value="200"> 200&#8381;</span></p>
+					<a href="./cart-number-econom-plus.html"><button class="black-button">Забронировать</button></a>
+				</div>
+				<div class="area-cat-div">
+					<img src="../resources/img/area-cat-3.png">
+					<h2>Комфорт</h2>
+					<p>Размеры (ШхГхВ) - 100х125х180 см</p>
+					<p class="Area" value="3">Площадь - 1,13 м<sup>2</sup></p>
+					<p>Оснащение номера <span id="sofa"> <img src="../resources/vector/Vector-2.svg"></span> <span id="cat_thing"> <img src="../resources/vector/Vector-3.svg"></span> <span id="ball"> <img src="../resources/vector/Vector-4.svg"></span></p>
+					<p>Цена за сутки: <span class="Price" value="250"> 250&#8381;</span></p>
+					<a href="./cart-number-comfort.html"><button class="black-button">Забронировать</button></a>
+				</div>
+				<div class="area-cat-div">
+					<img src="../resources/img/area-cat-4.png">
+					<h2>Сьют</h2>
+					<p>Размеры (ШхГхВ) - 125х125х180 см</p>
+					<p class="Area" value="4">Площадь - 1,56 м<sup>2</sup></p>
+					<p>Оснащение номера <span id="sofa"> <img src="../resources/vector/Vector-2.svg"></span> <span id="cat_thing"> <img src="../resources/vector/Vector-3.svg"></span> <span id="ball"> <img src="../resources/vector/Vector-4.svg"></span></p>
+					<p>Цена за сутки: <span class="Price" value="350"> 350&#8381;</span></p>
+					<a href="./cart-number-suite.html"><button class="black-button">Забронировать</button></a>
+				</div>
+				<div class="area-cat-div">
+					<img src="../resources/img/area-cat-5.png">
+					<h2>Люкс</h2>
+					<p>Размеры (ШхГхВ) - 160х160х180 см</p>
+					<p class="Area" value="5">Площадь - 2,56 м<sup>2</sup></p>
+					<p>Оснащение номера <span id="sofa"> <img src="../resources/vector/Vector-2.svg"></span> <span id="cat_thing"> <img src="../resources/vector/Vector-3.svg"></span> <span id="ball"> <img src="../resources/vector/Vector-4.svg"></span> <span id="home"><img src="../resources/vector/Vector-5.svg"></span></p>
+					<p>Цена за сутки: <span class="Price" value="500"> 500&#8381;</span></p>
+					<a href="./cart-number-lucs.html"><button class="black-button">Забронировать</button></a>
+				</div>
+				<div class="area-cat-div">
+					<img src="../resources/img/area-cat-6.png">
+					<h2>Супер-Люкс</h2>
+					<p>Размеры (ШхГхВ) - 180х160х180 см</p>
+					<p class="Area" value="6">Площадь - 2,88 м<sup>2</sup></p>
+					<p>Оснащение номера <span id="sofa"> <img src="../resources/vector/Vector-2.svg"></span> <span id="cat_thing"> <img src="../resources/vector/Vector-3.svg"></span> <span id="ball"> <img src="../resources/vector/Vector-4.svg"></span> <span id="home"><img src="../resources/vector/Vector-5.svg"></span></p>
+					<p>Цена за сутки: <span class="Price" value="600"> 600&#8381;</span></p>
+					<a href="./cart-number.html"><button class="black-button">Забронировать </button></a>
+				</div>
+			</div>
+		</content>
+		<div class="seven-days">
+			<h1>Каждый 7-й день</h1>
+			<h1>бесплатно</h1>
+			<p class="margin-p">Акция действует при размещении в номерах “Люкс” и “Супер-Люкс”</p>
+			<button class="button" onclick="popapToggle()">Забронировать </button>
+		</div>
+		<section class="sect5" id="How_us_seeking">
+			<div>
+				<h1 class="sect5-h1">Как нас найти</h1>
+				<div>
+					<p>Адрес</p>
+					<a href="https://yandex.ru/maps/-/CCUMIUVASD">Санкт-Петербург, ул Большая Конюшенная, д 19</a>
+				</div>
+				<div>
+					<p>Режим работы</p>
+					<p>Ежедневно, с 9:00 до 20:00</p>
+				</div>
+				<div>
+					<p>Телефон</p>
+					<a href="tel:8 (800) 333-55-99">8 (800) 333-55-99</a>
+				</div>
+				<div>
+					<p>E-mail</p>
+					<a href="email">info@cat-hotel.ru</a>
+				</div>
+				<div>
+					<p>Социальные сети</p>
+					<div class="sect5-div-last">
+						<img src="../resources/vector/facebook.svg">
+						<img src="../resources/vector/instagram.svg">
+						<img src="../resources/vector/vk.svg">
+					</div>
+				</div>
+			</div>
+			<div>
+				<!--<img src="../resources/vector/cat-map.svg">--><div style="position:relative;overflow:hidden;border:none;"><a href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Санкт‑Петербург</a><a href="https://yandex.ru/maps/2/saint-petersburg/?ll=30.323250%2C59.938617&mode=routes&rtext=~59.938635%2C30.323118&rtt=auto&ruri=~ymapsbm1%3A%2F%2Fgeo%3Fll%3D30.323%252C59.939%26spn%3D0.001%252C0.001%26text%3D%25D0%25A0%25D0%25BE%25D1%2581%25D1%2581%25D0%25B8%25D1%258F%252C%2520%25D0%25A1%25D0%25B0%25D0%25BD%25D0%25BA%25D1%2582-%25D0%259F%25D0%25B5%25D1%2582%25D0%25B5%25D1%2580%25D0%25B1%25D1%2583%25D1%2580%25D0%25B3%252C%2520%25D0%2591%25D0%25BE%25D0%25BB%25D1%258C%25D1%2588%25D0%25B0%25D1%258F%2520%25D0%259A%25D0%25BE%25D0%25BD%25D1%258E%25D1%2588%25D0%25B5%25D0%25BD%25D0%25BD%25D0%25B0%25D1%258F%2520%25D1%2583%25D0%25BB%25D0%25B8%25D1%2586%25D0%25B0%252C%252019%252F8&utm_medium=mapframe&utm_source=maps&z=17.74" style="color:#eee;font-size:12px;position:absolute;top:14px;">Яндекс.Карты</a><iframe src="https://yandex.ru/map-widget/v1/-/CCQpqZvVSC" height="580" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div></div>
+		</section>
+		<footer>
+			<a href="index.html"><img src="../resources/vector/лого.svg"></a>
+			<div>
+				<a href="#Why_we?">Почему мы?</a>
+				<a href="./catalog.html">Номера</a>
+				<a href="#reviews">Отзывы</a>
+				<a href="#How_us_seeking">Как нас найти</a>
+			</div>
+		</footer>
+		<div class="footer1-2">
+			<hr>
+			<div class="footer2">
+				<p>&#169;2019 Все права защищены</p>
+				<p>Политика конфиденциальности</p>
+			</div>
+		</div>
+	</main>
+	<div class="popap popap-hide">
+		<div class="popap-block">
+			<div>
+				<button onclick="popapToggle()"></button>
+				<h1>Забронировать номер</h1>
+				<input type="text" placeholder="Ваше имя">
+				<input type="text" placeholder="Имя Питомца">
+				<input type="tel" placeholder="Телефон">
+				<input type="email" placeholder="E-mail">
+				<div>
+					<p>Дата заезда</p><div class="c"> с </div>
+						<input type="date" max="2030-12-31" onClick="event.preventDefault()"> <div class="npedlog">по</div> 
+						<input type="date" max="2030-12-31" onClick="event.preventDefault()">
+				</div>
+				<input onclick="popapToggle()" class="black-button" type="submit" value="Отправить заявку">
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="../js/catalog.js"></script>
+	<script type="text/javascript" src="../js/popap.js"></script>
+</body>
+</html>

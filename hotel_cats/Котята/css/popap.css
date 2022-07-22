@@ -1,0 +1,124 @@
+/*pop-ap*/
+	.popap-hide{
+		display: none;
+	}
+	.popap-block{
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom:0;
+		margin: auto;
+		width: 570px;
+		height: 650px;
+		background: #FFFEFD;
+		box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
+		border-radius: 10px;
+		z-index: 99999;
+		background-image: url(../resources/img/paw.png);
+		background-repeat: no-repeat;
+		background-position: -20px -30px;
+	}
+	.popap-block>div{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.popap-block input{
+		border: 1px solid #D7D7D7;
+		box-sizing: border-box;
+		border-radius: 25px;
+	}
+	.popap-block button{
+		width: 16px;
+		height: 16px;
+		right: 40px;
+		top: 40px;
+		position: absolute;
+		background: none;
+		outline: none;
+		border:none;
+		background-image: url(../resources/vector/close.svg);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: 100% 100%;
+	}
+	.popap-block button:hover{
+		position: absolute;
+		background: none;
+		outline: none;
+		border:none;
+		background-image: url(../resources/vector/close.svg);
+		background-repeat: no-repeat;
+		background-position: center;
+
+	}
+	.popap-block button:active{
+		position: absolute;
+		background: none;
+		outline: none;
+		border:none;
+		background-image: url(../resources/vector/close.svg);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: 100% 100%;
+	}
+	.popap-block h1{
+		margin-top: 70px;
+		margin-bottom: 30px;
+	}
+	.popap-block>div>input:not(.black-button){
+		width: 450px;
+		height: 50px;
+		margin-top: 20px;
+	}
+	.popap-block>div>input{
+		text-indent: 30px;
+	}
+	.popap-block>div>div input{
+		text-indent: 7px;
+		width: 130px;
+		height: 50px;
+		color: #B5B5B5;
+		font-size: 16px;
+		line-height: 19px;
+	}
+	.popap-block>div>div input::-webkit-calendar-picker-indicator{
+    	display: none;
+	}
+	.popap-block>div>div{
+		display: flex;
+		justify-content: space-between;
+		width: 450px;
+		margin-top: 20px;
+		margin-bottom: 50px;
+	}
+	.popap-block>div>input:last-of-type{
+		width: 230px;
+		height: 50px;
+		text-indent: -25px;
+
+	}
+	.c{
+		display: inline-block;
+		margin-left: 20px;
+		margin-top: auto;
+		margin-bottom: auto; 
+	}
+	.npedlog{
+		display: inline-block;
+		margin-left: 10px;
+		margin-right: 10px;
+		margin-top: auto;
+		margin-bottom: auto;
+	}
+	.popap{
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		background: rgba(255, 254, 253, 0.8);
+		backdrop-filter: blur(8px);
+		z-index: 1;
+	}
+
+/*pop-ap*/

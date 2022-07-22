@@ -1,0 +1,172 @@
+content{
+	width: 100%;
+	max-width: 1170px;
+	height: 970px;
+	margin-top: 70px;
+	margin-bottom: 140px;
+}
+ul{
+	padding-left: 0;
+}
+li{
+	list-style: none;
+	margin-top: 10px;
+}
+select{
+	width: 174px;
+	height: 35px;
+	box-shadow: 0px 2px 12px rgba(173, 152, 143, 0.18);
+	border-radius: 25px;
+	padding-left: 20px;
+	border: none;
+}
+/*Контент форма*/
+	form{
+		height: 624px;
+		width: 210px;
+		float: left;
+		margin-top: 60px;
+		margin-right: 59px;
+	}
+	.p-margin{
+		margin-top: 0;
+	}
+	.input-numb{
+		width: 90px;
+	}
+	input[type="checkbox"]{
+		width: 20px;
+		height: 20px;
+		margin-right: 10px;
+	}
+	input[type="submit"]:not(.black-button){
+		width: 185px;
+		height: 42px;
+		border: 2px solid #FAC663;
+		box-sizing: border-box;
+		border-radius: 25px;
+		background: #FAC663;
+	}
+	input[type="reset"]{
+		width: 185px;
+		height: 42px;
+		border: 2px solid #FAC663;
+		box-sizing: border-box;
+		border-radius: 25px;
+		background: white;
+		margin-top: 15px;
+	}
+/*Контент форма*/
+/* Контент Коты*/
+	.area-cat{
+		display: flex;
+		flex-wrap: wrap;
+		width: 901px;
+		height: 885px;
+		margin-top: 60px;
+	}
+	.area-cat>div{
+		width: 268px;
+		height: 428px;
+		border: 1px solid #E1E1E1;
+		box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
+		margin-left: 15px;
+		margin-right: 15px;
+		margin-bottom: 30px;
+		margin-top: 0;
+	}
+	.area-cat>div span:last-of-type{
+		font-weight: 500;
+		font-size: 18px;
+	}
+	.area-cat>div p{
+		font-size: 14px;
+		line-height: 17px;
+		margin-left: 20px;
+		height: 14px;
+		margin-bottom: 15px;
+	}
+	.area-cat>div h2{
+		font-size: 20px;
+		margin-left: 20px;
+	}
+	.area-cat>div button{
+		height: 46px;
+		margin-left: 20px;
+	}
+/* Контент Коты*/
+/*Контент 1-ый блок*/
+	.cont-div1{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: 35px;
+		width: 1170px;
+	}
+	.cont-div1 h1{
+		margin-bottom: 0px;
+	}
+/*Контент 1-ый блок*/
+/*блок "семь дней"*/
+	.seven-days{
+		width: 1170px;
+		height: 379px;
+		background-image: url(../resources/img/seven_day_free.png);
+		padding-top: 78px;
+		padding-left: 270px;
+		background-size: 100%;
+		box-sizing: border-box;
+	}
+	.seven-days h1:last-of-type{
+		font-size: 56px;
+	}
+	.seven-days p{
+		width: 254px;
+		height: 35px;
+	}
+/*блок "семь дней"*/
+#empty_number{
+	position: relative;
+}
+#empty_number:hover::after{
+	content: url("../resources/img/tip.png");
+	position: absolute;
+	left: -40px;
+	bottom: 0;
+}
+#sofa{
+	position: relative;
+}
+#sofa:hover::after{
+	content: url("../resources/img/tip2.png");
+	position: absolute;
+	left: -90px;
+	bottom: 0;
+}
+#cat_thing{
+	position: relative;
+}
+#cat_thing:hover::after{
+	content: url("../resources/img/tip3.png");
+	position: absolute;
+	left: -90px;
+	bottom: 0;
+}
+#ball{
+	position: relative;
+}
+#ball:hover::after{
+	content: url("../resources/img/tip4.png");
+	position: absolute;
+	left: -90px;
+	bottom: 0;
+}
+#home{
+	position: relative;
+}
+#home:hover::after{
+	content: url("../resources/img/tip5.png");
+	position: absolute;
+	left: -90px;
+	bottom: 0;
+}

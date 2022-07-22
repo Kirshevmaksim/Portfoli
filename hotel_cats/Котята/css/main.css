@@ -1,0 +1,137 @@
+/*1 секция*/
+	section:nth-of-type(1){
+		display: flex;
+		align-items: center;
+		background-image: url(../resources/img/Cat.png);
+		width: 100%;
+		height: 504px;
+	}
+	section:nth-of-type(1) h1{
+		font-family: 'Rubik Bold', sans-serif;
+		font-size: 62px;
+		margin-top: 15px;
+		margin-bottom: 0;
+	}
+	section:nth-of-type(1) div{
+		margin-left: 198px;
+	}
+	
+/*1 секция*/
+/*2 секция*/
+	section:nth-of-type(2){
+		height: 757px;
+		margin-top: 140px;
+	}
+	.sect-div2{
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+	.sect-div2 div{
+		width: 370px;
+		height: 321px;
+		box-shadow: 0px 0px 1px;
+		border-radius: 8px;
+		padding-left: 30px;
+		padding-top: 30px;
+		padding-right: 30px;
+		box-sizing: border-box;
+		margin-bottom: 20px;
+	}
+	.sect-div2>div{
+		margin-right: 15px;
+		margin-left: 15px;
+	}
+	.sect-div2 p{
+		width: 291px;
+	}
+/*2 секция*/
+/*4 секция*/
+	section:nth-of-type(4){
+		margin-top: 140px;
+		max-width: 1470px;
+		width: 100%;
+		margin-left: 98px;
+		height: 380px;
+	}
+	.owl-stage{
+		padding-top: 25px;
+		margin-top: -25px;
+		height: 256px;
+	}
+	.sect4-div{
+		position: relative;
+		width: 470px;
+		height: 206px;
+		box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
+		border-radius: 8px;
+		padding-left: 70px;
+		padding-top: 35px;
+		padding-right: 35px;
+		box-sizing: border-box;
+	}
+	.sect4-div img{
+		position: absolute;
+		left: 35px;
+		top: 35px;
+	}
+	.sect4-div>div>p{
+		margin: 0;
+	}
+	.sect4-div>div>div{
+		display: flex;
+		justify-content: space-between;
+		font-size: 14px;
+		color: #848484;
+		margin-bottom: 20px;
+	}
+/*4 секция*/
+/*адаптив*/
+	@media screen and (max-width:768px){
+		section:nth-of-type(1) div{
+			text-align: center;
+			margin-left: 0px;
+			margin-top: 100px;
+		}
+		section:nth-of-type(1) button{
+			margin-left: 35px;
+		}
+		section:nth-of-type(1){
+			justify-content: center;
+			align-items: flex-start;
+			background-image: url(../resources/img/Cat-main-desktop.png);
+			height: 868px;
+		}
+		#reviews{
+			display: none;
+		}
+	}
+	@media screen and (min-width:200px) and (max-width:1216px){
+		.sect-div2 div{
+			width: 324px;
+			height: 285px;
+		}
+		.sect-div2 img{
+			width: 75px;
+		}
+		.sect-div2 p,.sect4-div>p{
+			font-size: 15px;
+		}
+		.sect4-div div>p{
+			font-size: 14px;
+		}
+		.sect-div2 h2{
+			font-size: 20px;
+		}
+		section:nth-of-type(2){
+			height: auto;
+		}
+		.sect4-div{
+			width: 442px;
+			height: 201px;
+		}
+
+	}
+
+
+/*адаптив*/

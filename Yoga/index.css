@@ -1,0 +1,383 @@
+body{
+	margin: 0;
+	background: #FCF8FE;
+}
+.main{
+	width: 100%;
+}
+.main>div{
+	margin: 0 auto;
+}
+a{
+	color:#8B7EAC;
+	outline: none;
+	text-decoration: none;
+}
+.p-purple{
+	font-size: 12px;
+	line-height: 20px;
+	color: #8E80A9;
+}
+.p-pink{
+	font-size: 14px;
+	line-height: 20px;
+	color: #E65C7B;
+}
+h2{
+	font-size: 16px;
+	line-height: 15px;
+	color: #8B7EAC;
+	margin: 0;
+}
+h3{
+	font-size: 18px;
+	line-height: 20px;
+	color: #8E80A9;
+	margin: 0;
+}
+.h1-style{
+	font-size: 30px;
+	line-height: 15px;
+	color: #8E80A9;
+	margin: 0;
+}
+.h1-center{
+	text-align: center;
+}
+.div-flex{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+/*bcg*/
+	.backgrounds{
+		position: absolute;
+		width: 100%;
+		z-index: -1;
+	}
+	.backgrounds>div{
+		width: 100%;
+		background-repeat: no-repeat;
+		position: relative;		
+	}
+	.bg-Yoga{
+		height: 765px;
+		background-image: url(./resources/bcg_Yoga.png);
+		background-position: bottom;
+		background-size: cover;
+	}
+	.count{
+		margin: auto;
+		position:absolute;
+		right: 0;
+		bottom: 0;
+		top: 0;
+		height: 18px;
+		display: flex;
+		align-items: center;
+		font-size: 30px;
+		line-height: 15px;
+		color: rgba(174, 164, 200, 0.5);
+	}
+	.bg-direction{
+		height: 722px;
+		background-image: url(./resources/bcg_direction.png);
+		background-position: 55%;
+
+	}
+	.bg-booking{
+		height: 638px;
+		overflow: hidden;
+	}
+	.bg-booking img{
+		height: 836px;
+		min-width: 1456px;
+		width: 100%;
+	}
+	.bg-teamReview{
+		height: 805px;
+	}
+	.bg-teamReview img{
+		position: absolute;
+		height: 1326px;
+		top: 199px;
+	}
+	.bg-review{
+		height: 802px;
+	}
+	.bg-footer{
+		height: 475px;
+		background-image: url(./resources/bcg_footer.png);
+		background-position: center;
+		background-size: cover;
+	}
+/*bcg*/
+/*header-div*/
+	.header{
+		max-width: 1160px;
+		width: 100%;
+		padding-top: 70px;
+		height: 765px;
+	}
+	.header p{
+		margin: 0;
+	}
+	header{
+		display: flex;
+		justify-content: space-between;
+
+	}
+	header div{
+		display: flex;
+		justify-content: space-between;
+		width: 82px;
+	}
+	.header h1{
+		width: 1065px;
+		line-height: 270px;
+		font-size: 265px;
+		text-shadow: 0px 4px 50px rgba(131, 115, 161, 0.6);
+		letter-spacing: 0.34em;
+		color: white;
+		margin: 0;
+	}
+	.yoga-div{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-top: 100px;
+	}
+	.yoga-div>p:first-of-type{
+		font-size: 45px;
+		color: #8E80A9;
+		margin-left: -10%;
+	}
+	.yoga-div button{
+		border: none;
+		background-color: #E65C7B;
+		width: 60px;
+		height: 50px;
+	}
+	.yoga-div div{
+		width: 260px;
+	}
+	.yoga-div div p{
+		margin-left: 15px;
+	}
+	.header>div:last-of-type{
+		margin-top: 100px;
+	}
+/*header-div*/
+/*direction-nav*/
+	div.direction-nav{
+		max-width: 925px;
+		width: 100%;
+		height: 722px;
+	}
+	.direction-nav h1{
+		padding-bottom: 65px;
+	}
+	.hatha-div{
+		display: flex;
+		flex-direction: column;
+		height: 493px;
+		width: 366px;
+		background-color: white;
+		box-shadow: 0px 4px 25px rgba(142, 128, 169, 0.2);
+	}
+	.discription{
+		display: flex;
+		justify-content: space-between;
+	}
+	.discription-text{
+		padding-left: 45px;
+		padding-top: 40px;
+	}
+	.hatha-button{
+		height: 182px;
+		width: 65px;
+		border: none;
+		background-color: #8E80A9;
+		padding: 0;
+	}
+	.kynAsha-div{
+		width: 525px;
+		height: 180px;
+		background-color: white;
+		margin-bottom: 28px;
+		display: flex;
+		flex-direction: row;
+		box-shadow: 0px 4px 25px rgba(142, 128, 169, 0.2);
+	}
+	.kynAsha-div>div{
+		width: 180px;
+		margin-left: 34px;
+		margin-top: 25px;
+	}
+	.button-kynAsha{
+		width: 45px;
+		height: 30px;
+		background: #8E80A9;
+		border:none;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-top: 113px;
+	}
+	.direction-button{
+		width: 521px;
+		height: 48px;
+		background-color: white;
+		box-shadow: 0px 4px 25px rgba(142, 128, 169, 0.2);
+		border:none;
+		margin-top: 29px;
+	}
+/*direction-nav*/
+/*Reservations*/
+	.Reservations{
+		max-width: 931px;
+		width: 100%;
+		height: 617px;
+		
+	}
+	.Reservations-buttons{
+		display: flex;
+		justify-content: space-between;
+		width: 286px;
+		margin: auto;
+		margin-top: 55px;
+		margin-bottom: 50px;
+	}
+	.Reservations-buttons button{
+		background: none;
+		outline: none;
+		border: none;
+		text-decoration: underline;
+	}
+	.Reservations-divs{
+		display: flex;
+		justify-content: space-between;
+	}
+	.Reservations-divs div{
+		background: #FFFFFF;
+		box-shadow: 0px 4px 25px rgba(142, 128, 169, 0.2);
+		width: 283px;
+		height: 237px;
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		justify-content: center;
+	}
+	.Reservations-divs div:hover{
+		height: 331px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.Reservations-divs div:hover button{
+		display: block;
+
+	}
+	.Reservations-divs button{
+		display: none;
+		margin-top: 35px;
+		width: 223px;
+		height: 52px;
+		background: #8E80A9;
+		border: none;
+		color: white;
+		font-size: 12px;
+		line-height: 20px;
+	}
+	.Reservations-divs p, .Reservations-divs h1{
+		margin-top: 22px;
+	}
+/*Reservations*/
+/*OurTeam*/
+	.our-Team{
+		max-width: 976px;
+		width: 100%;
+		height: 702px;
+	}
+	.portfolia{
+		display: flex;
+		justify-content: space-between;
+		margin: 0 auto;
+		margin-top: 64px;
+	}
+	.portfolia-img{
+		display: flex;
+		flex-direction: column;
+	}
+	.portfolia-text{
+		width: 485px;
+		margin-top: 60px;
+	}
+	.person-white{
+		display: flex;
+		justify-content: space-between;
+		width: 400px;
+		height: 105px;
+		background-color: white;
+		box-shadow: 0px 4px 25px rgba(142, 128, 169, 0.2);
+		z-index: -1;
+		margin-top: 60px;
+		margin-left: 50px;
+	}
+	.person-white-div1{
+		padding-left: 110px;
+		box-sizing: border-box;
+	}
+	.person-white-div1 p{
+		width: 88px;
+
+	}
+	.person-white-div2{
+		display: flex;
+		flex-direction: column;
+	}
+	.person-white-div2 div{
+		margin-left: 30px;
+		margin-top: 16px;
+	}
+	.person{
+		position: relative;
+		width: 422px;
+		height: 161px;
+		margin-bottom: 33px;
+	}
+	.person>img{
+		position: absolute;
+	}
+	.person-white-button{
+		width: 57px;
+		height: 20px;
+		background: none;
+		outline: none;
+		border: none;
+		margin-top: 30px;
+		margin-right: 25px;
+		text-decoration: underline;
+	}
+/*OurTeam*/
+/*user-Reviews*/
+	.user-Reviews{
+		margin-top: 100px;
+		max-width: 905px;
+		width: 100%;
+		height: 540px;
+	}
+	.slider-item-review{
+		display: flex;
+		justify-content: space-between;
+		margin-top: 62px;
+	}
+	.slider-item-review>div{
+		width: 440px;
+		height: 315px;
+		padding-left: 85px;
+		background: #FFFFFF;
+		box-shadow: 0px 4px 25px rgba(142, 128, 169, 0.2);
+		box-sizing: border-box;
+	}
+/*user-Reviews*/

@@ -1,0 +1,301 @@
+body{
+	display: flex;
+	justify-content: center;
+	margin: 0;
+}
+.background{
+	position: absolute;
+}
+main{
+	width: 100%;
+	max-width: 1366px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+a{
+	font-family: 'Lato Regular', sans-serif;
+	font-size: 16px;
+	color: #1A212F;
+	line-height: 19px;
+	text-decoration: none;
+}
+h1{
+	font-family: 'Rubik Bold', sans-serif;
+	font-size: 36px;
+	line-height: 43px;
+	margin: 0;
+}
+h2{
+	font-family: 'Rubik Normal', sans-serif;
+	font-size: 22px;
+	line-height: 140%;
+}
+p{
+	font-family: 'Lato Regular', sans-serif;
+	font-size: 16px;
+	line-height: 140%;
+}
+section>h1{
+	text-align: center;
+	margin-bottom: 70px;
+}
+.margin-p{
+	margin-top: 25px;
+	margin-bottom: 40px;
+}
+/*хедер*/
+	header{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: 76px;
+		width: 100%;
+		max-width: 1170px;
+	}
+	header div{
+		display: flex;
+		justify-content: space-between;
+		width: 405px;
+	}
+/*хедер*/
+/*футер*/
+	footer{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: 76px;
+		width: 100%;
+		max-width: 1170px;
+	}
+	footer div{
+		display: flex;
+		justify-content: space-between;
+		width: 405px;
+	}
+	hr{
+		color: grey;
+		width: 99%;
+	}
+	.footer1-2{
+		width: 100%;
+		max-width: 1170px;
+	}
+	.footer2{
+		display: flex;
+		justify-content: space-between;	
+		align-items: center;
+		color: #8F8F8F;
+		height: 60px;
+	}
+	.footer2 p{
+		font-size: 12px;
+		line-height: 14px;
+	}
+/*футер*/
+/*3 секция*/
+	.sect3{
+		margin-top: 140px;
+		height: 578px;
+		width: 99%;
+		max-width: 1030px;
+	}
+	.sect3-div2 span{
+		color: #FAC663;
+		font-size: 43px;
+	}
+	.sect3-div2 ul{
+		padding-left: 0;
+	}
+	.sect3-div2 li{
+		display: flex;
+		align-items: center;
+		list-style: none;
+		font-family: 'Lato Regular', sans-serif;
+		margin: 0;
+		height: 33px;
+	}
+	.sect3-div1{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.sect3-div2{
+		background-color: white;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		box-sizing: border-box;
+		width: 500px;
+		height: 284px;
+		box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
+		border-radius: 8px;
+		padding-left: 100px;
+		margin-left: -55px;
+	}
+		.owl-nav{
+			position: absolute;
+			top: 400px;
+
+			right: 7%;
+		}
+		.owl-nav button:first-of-type{
+			position: absolute;
+			width: auto;
+			left: -20px;
+		}
+		.owl-nav button:last-of-type{
+			position: absolute;
+			width: auto;
+			left: 20px;
+		}
+		.owl-dots {
+			display: flex;
+        	justify-content: center;
+	    }
+	    .owl-dot{
+	    	width: auto;
+	        outline: none;
+	    }
+	    .owl-dots .owl-dot span {
+	        width: 20px;
+	        height: 20px;
+	        margin: 5px 7px;
+	           background: #D6D6D6;
+	        display: block;
+	        -webkit-backface-visibility: visible;
+	        transition: opacity .2s ease;
+	        border-radius: 30px;
+		}
+	    .owl-dots .owl-dot {
+	        display: inline-block;
+	        zoom: 1;
+		}
+	    .owl-dots .owl-dot.active span, 
+	    .owl-dots .owl-dot:hover span {
+	           background: #869791;
+		}
+/*3 секция*/
+/*5 секция*/
+	.sect5{
+		margin-top: 140px;
+		display: flex;
+		width: 100%;
+		height: 580px;
+	}
+	.sect5>div:first-of-type{
+		background: #FAC663;
+		max-width: 568px;
+		width: 100%;
+		height: 580px;
+		padding-left: 15vw;
+		box-sizing: border-box;
+	}
+	.sect5 p:last-of-type{
+		width: 227px;
+	}
+	.sect5 p:first-of-type{
+		font-family: 'Lato Medium';
+	}
+	.sect5-h1{
+		margin-top: 70px;
+		margin-bottom: 50px;
+		text-align: left;
+	}
+	.sect5>div:last-of-type{
+		max-width: 798px;
+		width: 100%;
+		height: 580px;
+	}
+	.sect5-div-last{
+		display: flex;
+		justify-content: space-between;
+		width: 100px;
+	}
+	iframe{
+		max-width:798px; 
+		width: 100%;
+	}
+	.hidden{
+		display: none;
+	}
+/*5 секция*/
+button{
+	background: white;
+	background-image: url("../resources/vector/paw.svg"); 
+	background-position: center right 10px;
+	background-size: 34px 34px;
+	background-repeat: no-repeat;
+	padding-right: 25px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	font-size: 16px;
+	font-family: 'Lato Regular', sans-serif;
+	border: none;
+	outline: none;
+	border-radius: 25px;
+	width: 206px;
+	height: 50px;
+	color: black;
+}
+.black-button{
+	background: #FF7236;
+	background-image: url("../resources/vector/paw2.svg"); 
+	background-position: center right 10px;
+	background-size: 34px 34px;
+	background-repeat: no-repeat;
+	color: white;
+}
+button:active{
+	background: #FF7236;
+	background-image: url("../resources/vector/paw2.svg"); 
+	background-position: center right 10px;
+	background-size: 34px 34px;
+	background-repeat: no-repeat;
+	color: white;
+}
+button.black-button:active{
+	background: white;
+	background-image: url("../resources/vector/paw.svg"); 
+	background-position: center right 10px;
+	background-size: 34px 34px;
+	background-repeat: no-repeat;
+	border: 3px solid #FF7236;
+	color: black;
+}
+
+
+/*адаптив*/
+@media screen and (min-width:200px) and (max-width:1216px){
+	.sect3-div1 img{
+		width: 442px;
+		height: 326px;
+	}
+	.sect3-div2{
+		width: 345px;
+		height: 266px;
+	}
+	.sect3-div2 p{
+			font-size: 15px;
+	}
+	.sect3-div2 h2{
+		font-size: 20px;
+	}
+	.owl-nav{
+		display: none;
+	}
+}
+@media screen and (max-width:768px){
+	p{
+		font-size: 15px;
+	}
+	a{
+		font-size: 15px;
+	}
+	.sect5>div:first-of-type{
+		padding-left: 5vw;
+	}
+}
+
+/*адаптив*/

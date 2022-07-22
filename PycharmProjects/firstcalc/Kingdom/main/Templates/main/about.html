@@ -1,0 +1,18 @@
+{%extends 'main/base.html'%}
+{%load static%}
+{%block title%}Among us{%endblock%}
+{%block textlist%}
+		<h2>About me</h2>
+		<ol>
+			<li><a href="http://127.0.0.1:8000/">index</a></li>
+			<li><a href="http://127.0.0.1:8000/about/">about</a></li>
+			<li><a href="http://127.0.0.1:8000/shop/">shop</a></li>
+			<li><a href="http://127.0.0.1:8000/admin/">admin</a></li>
+		</ol>
+		<form method="post">
+			{% csrf_token %}
+			{{form}}
+			{{error}}
+			<button type="submit">Send</button>
+		</form>
+{%endblock%}

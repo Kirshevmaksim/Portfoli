@@ -1,0 +1,10 @@
+﻿{%extends 'main/base.html'%}
+{%load static%}
+{%block title%}Magaz{%endblock%}
+{%block textlist%}
+		<h2>Textlist goods</h2>
+		{%for t in task%}
+			<h3>{{t.nameTask}}</h3>
+			<p>{{t.dateTask}}</p>
+		{%endfor%}
+{%endblock%}

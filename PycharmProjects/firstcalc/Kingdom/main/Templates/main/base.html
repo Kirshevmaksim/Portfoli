@@ -1,0 +1,21 @@
+{%load static%}
+<!DOCTYPE html>
+<html>
+<head>
+<title>{%block title%}{%endblock%}</title>
+<link rel="stylesheet" type="text/css" href="{%static 'index.css'%}">
+</head>
+<body>
+	<header>
+		<h2>maxprogrammist.com</h2>
+		<div>
+			<p>Главная</p>
+			<p>Магазин</p>
+			<p>Обо мне</p>
+		</div>
+	</header>
+	<main>
+		{%block textlist%}{%endblock%}
+	</main>
+</body>
+</html>
